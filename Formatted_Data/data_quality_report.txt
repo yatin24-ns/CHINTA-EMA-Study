@@ -1,0 +1,115 @@
+
+
+  STAGE 1: ORGANISATION & IMPUTATION
+
+
+
+[Step 1/8] Loading raw datasets
+  Raw merged survey rows: 282
+  After filtering to verified: 282 rows, 29 participants
+  Excluded Week 3 data. Retained: 223 rows (Week 1 and 2 only)
+
+
+  MISSING DATA (MAR)
+
+
+Overall missingness in S1_Workload_Mean: 27.80%
+  Missingness by day of week (0=Mon, 6=Sun):
+    Day 0: 22.22%
+    Day 1: 52.63%
+    Day 2: 21.21%
+    Day 3: 35.29%
+    Day 4: 31.03%
+    Day 5: 17.24%
+    Day 6: 4.17%
+  Missingness by Week Onset (Monday): {0: 28.87700534759358, 1: 22.22222222222222}
+  Missingness by Week Finish (Friday): {0: 27.31958762886598, 1: 31.03448275862069}
+Overall missingness in Leisure_Log: 30.04%
+  Missingness by day of week (0=Mon, 6=Sun):
+    Day 0: 33.33%
+    Day 1: 23.68%
+    Day 2: 18.18%
+    Day 3: 52.94%
+    Day 4: 24.14%
+    Day 5: 27.59%
+    Day 6: 29.17%
+  Missingness by Week Onset (Monday): {0: 29.411764705882355, 1: 33.33333333333333}
+  Missingness by Week Finish (Friday): {0: 30.927835051546392, 1: 24.137931034482758}
+  Missingness in Leisure_Log by Workload level (where observed) (0=Low, 1=High):
+    Workload 0: 25.93%
+    Workload 1: 36.25%
+Overall missingness in Sleep_Quality: 28.70%
+  Missingness by day of week (0=Mon, 6=Sun):
+    Day 0: 27.78%
+    Day 1: 52.63%
+    Day 2: 21.21%
+    Day 3: 35.29%
+    Day 4: 31.03%
+    Day 5: 17.24%
+    Day 6: 4.17%
+  Missingness by Week Onset (Monday): {0: 28.87700534759358, 1: 27.77777777777778}
+  Missingness by Week Finish (Friday): {0: 28.350515463917525, 1: 31.03448275862069}
+  Missingness in Sleep_Quality by Workload level (where observed) (0=Low, 1=High):
+    Workload 0: 1.23%
+    Workload 1: 1.25%
+Overall missingness in S2_Fatigue_Mean: 35.87%
+  Missingness by day of week (0=Mon, 6=Sun):
+    Day 0: 36.11%
+    Day 1: 31.58%
+    Day 2: 30.30%
+    Day 3: 47.06%
+    Day 4: 34.48%
+    Day 5: 27.59%
+    Day 6: 45.83%
+  Missingness by Week Onset (Monday): {0: 35.82887700534759, 1: 36.11111111111111}
+  Missingness by Week Finish (Friday): {0: 36.08247422680412, 1: 34.48275862068966}
+  Missingness in S2_Fatigue_Mean by Workload level (where observed) (0=Low, 1=High):
+    Workload 0: 37.04%
+    Workload 1: 35.00%
+
+  Retained 2+ survey days: 159 rows
+
+[Step 5/8] Saving original datasets to Formatted_Data...
+  Saved C:\Users\praka\OneDrive\Desktop\CHINTA practice\Formatted_Data\original_with_missing.xlsx
+  Saved C:\Users\praka\OneDrive\Desktop\CHINTA practice\Formatted_Data\original_complete_cases.xlsx
+
+
+  3-LEVEL ICC VARIANCE CHECK (Complete Cases)
+
+
+  Between-Person (L3)   variance share: 73.68%  (ICC_person = 0.7368)
+  Between-Week-in-Person (L2) var share: 5.25%  (ICC_week = 0.0525)
+  Within-Week (L1)       variance share: 21.07%
+  Total n_complete = 78, n_participants = 22, n_weeks = 34
+  DECISION: Week-level variance >= 5%. 3-Level models are RETAINED.
+
+[Step 6/8] Executing R-Py Bridge for FCS-LMM Imputation...
+  R imputation script completed successfully.
+  Loaded imputed datasets: 3180 rows (m=20)
+  Restored original NA values for S2_Fatigue_Mean (MIDO strategy).
+
+[Step 7/8] Clamping imputed values to mathematical bounds...
+  Clamped Sleep_Quality to [0.0, 10.0]
+  Clamped S1_Workload_Mean to [2.285714285714286, 83.0]
+  Clamped S1_Workload_SD to [3.401680257083045, 43.08850249914758]
+  Clamped Leisure_Log to [0.4054651081081644, 1.992430164690206]
+
+[Step 8/8] Processing centering and transforms for all m=20 datasets...
+  Saved JAV processed datasets to C:\Users\praka\OneDrive\Desktop\CHINTA practice\Formatted_Data\imputed_processed_ema_jav.parquet
+  Saved Passive processed datasets to C:\Users\praka\OneDrive\Desktop\CHINTA practice\Formatted_Data\imputed_processed_ema_passive.parquet
+
+
+  JAV INTERNAL CONSISTENCY
+
+
+Mean Absolute Discrepancy for Imputed Interaction_Normal: 0.7837
+Mean Absolute Discrepancy for Imputed Interaction_Crunch: 0.7851
+Number of rows with Interaction_Normal discrepancy > 0.2: 822 / 960
+
+
+  PASSIVE INTERNAL CONSISTENCY
+
+
+Mean Absolute Discrepancy for Interaction_Normal: 0.000000  (expected: 0.000000)
+Mean Absolute Discrepancy for Interaction_Crunch:  0.000000  (expected: 0.000000)
+PASS: All interactions match their component products exactly.
