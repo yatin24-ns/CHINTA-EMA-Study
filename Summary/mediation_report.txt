@@ -1,0 +1,30 @@
+======================================================================
+  LAGGED MULTILEVEL MEDIATION ANALYSIS REPORT
+======================================================================
+Model N: 64 consecutive-day observations (pooled across m=20 imputations)
+
+--- WITHIN-PERSON MEDIATION (Daily fluctuations) ---
+  Path A (Workload_WP -> Leisure_WP):    Coef = -0.0676, SE = 0.1402, p = 0.6329
+  Path B (Leisure_WP -> Fatigue_t+1):    Coef = 0.1360, SE = 0.0966, p = 0.1681
+  Total Effect C (Workload_WP alone):    Coef = 0.0975, p = 0.2575
+  Direct Effect C' (net of Leisure):     Coef = 0.1002, p = 0.2524
+
+  INDIRECT EFFECT (a*b):                 -0.0092
+  Monte Carlo 95% CI:                    [-0.0677, 0.0368]
+  -> NULL FINDING: CI includes zero. No evidence for WP mediation.
+  Proportion Mediated:                   -9.4% (Descriptive only)
+
+--- BETWEEN-PERSON MEDIATION (Trait-level/Chronic effects) ---
+  Path A (Workload_BP -> Leisure_BP):    Coef = -0.0156, SE = 0.2032, p = 0.9400
+  Path B (Leisure_BP -> Fatigue_t+1):    Coef = -0.2672, SE = 0.1874, p = 0.1939
+  Total Effect C (Workload_BP alone):    Coef = 0.4427, p = 0.0216
+  Direct Effect C' (net of Leisure):     Coef = 0.4257, p = 0.0253
+
+  INDIRECT EFFECT (a*b):                 0.0042
+  Monte Carlo 95% CI:                    [-0.1395, 0.1517]
+  -> NULL FINDING: CI includes zero. No evidence for BP mediation.
+  Proportion Mediated:                   0.9% (Descriptive only)
+
+--- PLACEBO TEST (Reverse Direction) ---
+  Hypothesis: Fatigue(t) -> Leisure_WP(t+1)
+  Fatigue Effect:                        Coef = -0.0412, p = 1.0000

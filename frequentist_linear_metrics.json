@@ -1,0 +1,358 @@
+{
+    "Linear_2L_original": {
+        "Converged": true,
+        "Converged_ML": true,
+        "Dataset": "original",
+        "N_obs_mean": 78.0,
+        "m_imputations": 1,
+        "ICC_mean_ML": 0.36981010845699536,
+        "ICC_mean_REML": 0.4518281425332317,
+        "AIC_ML": {
+            "mean": 178.90727607903455,
+            "sd": 0.0,
+            "min": 178.90727607903455,
+            "max": 178.90727607903455
+        },
+        "BIC_ML": {
+            "mean": 207.18778199930966,
+            "sd": 0.0,
+            "min": 207.18778199930966,
+            "max": 207.18778199930966
+        },
+        "LogLikelihood_ML": {
+            "mean": -77.45363803951727,
+            "sd": 0.0,
+            "min": -77.45363803951727,
+            "max": -77.45363803951727
+        },
+        "Note": "AIC/BIC/LogLikelihood are averaged across imputations (descriptive) and are not formally pooled. Coefficients/SEs are formally pooled.",
+        "Parameters": {
+            "Intercept": {
+                "Estimate": -0.2059,
+                "SE": 0.1518,
+                "t_or_z": -1.3567,
+                "p_val": 0.1749
+            },
+            "Workload_WP_z": {
+                "Estimate": 0.1576,
+                "SE": 0.0755,
+                "t_or_z": 2.0872,
+                "p_val": 0.0369
+            },
+            "Leisure_WP_z": {
+                "Estimate": -0.0609,
+                "SE": 0.0818,
+                "t_or_z": -0.7437,
+                "p_val": 0.457
+            },
+            "Sleep_WP_z": {
+                "Estimate": -0.0677,
+                "SE": 0.0729,
+                "t_or_z": -0.9277,
+                "p_val": 0.3536
+            },
+            "Workload_BP_z": {
+                "Estimate": 0.4321,
+                "SE": 0.1332,
+                "t_or_z": 3.243,
+                "p_val": 0.0012
+            },
+            "Leisure_BP_z": {
+                "Estimate": -0.1765,
+                "SE": 0.159,
+                "t_or_z": -1.1096,
+                "p_val": 0.2672
+            },
+            "Sleep_BP_z": {
+                "Estimate": -0.191,
+                "SE": 0.1623,
+                "t_or_z": -1.1771,
+                "p_val": 0.2392
+            },
+            "Trait_Fatigue_z": {
+                "Estimate": 0.037,
+                "SE": 0.1533,
+                "t_or_z": 0.2416,
+                "p_val": 0.8091
+            },
+            "day_number_z": {
+                "Estimate": -0.1374,
+                "SE": 0.0963,
+                "t_or_z": -1.4265,
+                "p_val": 0.1537
+            },
+            "is_weekend": {
+                "Estimate": 0.2809,
+                "SE": 0.1869,
+                "t_or_z": 1.5029,
+                "p_val": 0.1329
+            }
+        },
+        "Parameters_ML": {
+            "Intercept": {
+                "Estimate": -0.2096,
+                "SE": 0.1325,
+                "t_or_z": -1.5816,
+                "p_val": 0.1138
+            },
+            "Workload_WP_z": {
+                "Estimate": 0.1606,
+                "SE": 0.0723,
+                "t_or_z": 2.221,
+                "p_val": 0.0263
+            },
+            "Leisure_WP_z": {
+                "Estimate": -0.0656,
+                "SE": 0.0783,
+                "t_or_z": -0.8371,
+                "p_val": 0.4025
+            },
+            "Sleep_WP_z": {
+                "Estimate": -0.0714,
+                "SE": 0.0698,
+                "t_or_z": -1.0228,
+                "p_val": 0.3064
+            },
+            "Workload_BP_z": {
+                "Estimate": 0.4405,
+                "SE": 0.1158,
+                "t_or_z": 3.8048,
+                "p_val": 0.0001
+            },
+            "Leisure_BP_z": {
+                "Estimate": -0.1734,
+                "SE": 0.1377,
+                "t_or_z": -1.2592,
+                "p_val": 0.208
+            },
+            "Sleep_BP_z": {
+                "Estimate": -0.1933,
+                "SE": 0.141,
+                "t_or_z": -1.3713,
+                "p_val": 0.1703
+            },
+            "Trait_Fatigue_z": {
+                "Estimate": 0.0409,
+                "SE": 0.1329,
+                "t_or_z": 0.3075,
+                "p_val": 0.7585
+            },
+            "day_number_z": {
+                "Estimate": -0.1496,
+                "SE": 0.093,
+                "t_or_z": -1.6096,
+                "p_val": 0.1075
+            },
+            "is_weekend": {
+                "Estimate": 0.2838,
+                "SE": 0.1786,
+                "t_or_z": 1.5891,
+                "p_val": 0.112
+            }
+        },
+        "FMI_Statistics": {},
+        "Per_Imputation_Convergence_REML": [
+            true
+        ],
+        "Per_Imputation_Convergence_ML": [
+            true
+        ]
+    },
+    "Linear_2L_imputed": {
+        "Converged": true,
+        "Converged_ML": true,
+        "Dataset": "imputed",
+        "N_obs_mean": 127.0,
+        "m_imputations": 20,
+        "ICC_mean_ML": 0.26235789691418476,
+        "ICC_mean_REML": 0.33095337243780615,
+        "AIC_ML": {
+            "mean": 295.47814100529826,
+            "sd": 6.2382436183210555,
+            "min": 286.4798357209737,
+            "max": 311.1553680645459
+        },
+        "BIC_ML": {
+            "mean": 329.60838604280127,
+            "sd": 6.238243618321056,
+            "min": 320.6100807584768,
+            "max": 345.28561310204896
+        },
+        "LogLikelihood_ML": {
+            "mean": -135.73907050264913,
+            "sd": 3.1191218091605277,
+            "min": -143.57768403227294,
+            "max": -131.23991786048686
+        },
+        "Note": "AIC/BIC/LogLikelihood are averaged across imputations (descriptive) and are not formally pooled. Coefficients/SEs are formally pooled.",
+        "Parameters": {
+            "Intercept": {
+                "Estimate": -0.0148,
+                "SE": 0.1259,
+                "t_or_z": -0.1178,
+                "p_val": 0.9079
+            },
+            "Workload_WP_z": {
+                "Estimate": 0.246,
+                "SE": 0.0695,
+                "t_or_z": 3.5411,
+                "p_val": 0.0007
+            },
+            "Leisure_WP_z": {
+                "Estimate": -0.0663,
+                "SE": 0.0749,
+                "t_or_z": -0.885,
+                "p_val": 0.3791
+            },
+            "Sleep_WP_z": {
+                "Estimate": -0.0689,
+                "SE": 0.0766,
+                "t_or_z": -0.8996,
+                "p_val": 0.3721
+            },
+            "Workload_BP_z": {
+                "Estimate": 0.4142,
+                "SE": 0.1176,
+                "t_or_z": 3.5231,
+                "p_val": 0.0044
+            },
+            "Leisure_BP_z": {
+                "Estimate": -0.1651,
+                "SE": 0.1432,
+                "t_or_z": -1.1532,
+                "p_val": 0.2706
+            },
+            "Sleep_BP_z": {
+                "Estimate": -0.1349,
+                "SE": 0.1393,
+                "t_or_z": -0.9688,
+                "p_val": 0.3515
+            },
+            "Trait_Fatigue_z": {
+                "Estimate": 0.0371,
+                "SE": 0.1178,
+                "t_or_z": 0.3151,
+                "p_val": 0.7576
+            },
+            "day_number_z": {
+                "Estimate": -0.0633,
+                "SE": 0.0802,
+                "t_or_z": -0.7896,
+                "p_val": 0.4315
+            },
+            "is_weekend": {
+                "Estimate": 0.0469,
+                "SE": 0.1667,
+                "t_or_z": 0.2816,
+                "p_val": 0.7788
+            }
+        },
+        "Parameters_ML": {
+            "Intercept": {
+                "Estimate": -0.017,
+                "SE": 0.1125,
+                "t_or_z": -0.1512,
+                "p_val": 0.8819
+            },
+            "Workload_WP_z": {
+                "Estimate": 0.2471,
+                "SE": 0.0683,
+                "t_or_z": 3.6205,
+                "p_val": 0.0006
+            },
+            "Leisure_WP_z": {
+                "Estimate": -0.0683,
+                "SE": 0.0736,
+                "t_or_z": -0.9287,
+                "p_val": 0.3562
+            },
+            "Sleep_WP_z": {
+                "Estimate": -0.0693,
+                "SE": 0.0756,
+                "t_or_z": -0.9167,
+                "p_val": 0.3633
+            },
+            "Workload_BP_z": {
+                "Estimate": 0.4214,
+                "SE": 0.1059,
+                "t_or_z": 3.9789,
+                "p_val": 0.0021
+            },
+            "Leisure_BP_z": {
+                "Estimate": -0.1693,
+                "SE": 0.1284,
+                "t_or_z": -1.3184,
+                "p_val": 0.2122
+            },
+            "Sleep_BP_z": {
+                "Estimate": -0.1345,
+                "SE": 0.1245,
+                "t_or_z": -1.0799,
+                "p_val": 0.3016
+            },
+            "Trait_Fatigue_z": {
+                "Estimate": 0.0385,
+                "SE": 0.1057,
+                "t_or_z": 0.3645,
+                "p_val": 0.7213
+            },
+            "day_number_z": {
+                "Estimate": -0.07,
+                "SE": 0.0785,
+                "t_or_z": -0.8918,
+                "p_val": 0.3745
+            },
+            "is_weekend": {
+                "Estimate": 0.049,
+                "SE": 0.1626,
+                "t_or_z": 0.3013,
+                "p_val": 0.7638
+            }
+        },
+        "FMI_Statistics": {},
+        "Per_Imputation_Convergence_REML": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+        ],
+        "Per_Imputation_Convergence_ML": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+        ]
+    }
+}

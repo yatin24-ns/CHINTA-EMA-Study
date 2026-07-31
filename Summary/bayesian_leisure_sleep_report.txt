@@ -1,0 +1,19 @@
+===========================================================================
+  BAYESIAN LAGGED MEDIATION: FATIGUE(t) -> LEISURE(t) -> SLEEP(t+1)
+===========================================================================
+Model N: ~82 consecutive-day observations (pooled across m=20 imputations)
+AR(1) Autocorrelation controlled via Sleep_WP_z(t) in all models.
+
+--- MEDIATION PATHS ---
+  Path A (Fatigue_t -> Leisure_t):              Coef = -0.1253, 95% HDI = [-0.4938, 0.2402], pd = 75.3%
+  Path B (Leisure_t -> Sleep_t+1):              Coef = -0.0762, 95% HDI = [-0.3386, 0.1834], pd = 71.5%
+  Total Effect C (Fatigue_t alone):             Coef = 0.0562, 95% HDI = [-0.2966, 0.4046], pd = 62.4%
+  Direct Effect C' (net of Leisure):            Coef = 0.0474, 95% HDI = [-0.3163, 0.4029], pd = 60.6%
+
+  INDIRECT EFFECT (a*b):                        Coef = 0.0080, 95% HDI = [-0.0542, 0.0866], pd = 60.1%
+  -> NULL FINDING: 95% HDI includes zero. No evidence for mediation.
+  Proportion Mediated (Median):               0.4% (Descriptive only)
+
+--- FALSIFICATION / PLACEBO TEST (Reverse Time) ---
+  Hypothesis: Leisure(t) -> Sleep(t) [Testing if trait-level copers confound day-to-day causality]
+  Placebo Effect:                               Coef = 0.1965, 95% HDI = [-0.0724, 0.4434], pd = 93.2%

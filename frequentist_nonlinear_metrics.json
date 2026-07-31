@@ -1,0 +1,588 @@
+{
+    "NonLinear_2L_original": {
+        "Converged": true,
+        "Converged_ML": true,
+        "Dataset": "original",
+        "N_obs_mean": 78.0,
+        "m_imputations": 1,
+        "ICC_mean_ML": 0.403696999640193,
+        "ICC_mean_REML": 0.4511518758246042,
+        "Pseudo_R2_Marginal_mean": 0.4321451197404008,
+        "Pseudo_R2_Conditional_mean": 0.661386431132242,
+        "Singular_Fit_Warning": false,
+        "Random_Slope_Improves_Fit": false,
+        "AIC_ML": {
+            "mean": 183.86144429436627,
+            "sd": 0.0,
+            "min": 183.86144429436627,
+            "max": 183.86144429436627
+        },
+        "BIC_ML": {
+            "mean": 223.92549434808933,
+            "sd": 0.0,
+            "min": 223.92549434808933,
+            "max": 223.92549434808933
+        },
+        "LogLikelihood_ML": {
+            "mean": -74.93072214718313,
+            "sd": 0.0,
+            "min": -74.93072214718313,
+            "max": -74.93072214718313
+        },
+        "Note": "AIC/BIC/LogLikelihood are averaged across imputations (descriptive) and are not formally pooled. Coefficients/SEs are formally pooled.",
+        "Parameters": {
+            "Intercept": {
+                "Estimate": -0.0864,
+                "SE": 0.1959,
+                "t_or_z": -0.4409,
+                "p_val": 0.6593
+            },
+            "Workload_Baseline_WP": {
+                "Estimate": 0.1355,
+                "SE": 0.1464,
+                "t_or_z": 0.9255,
+                "p_val": 0.3547
+            },
+            "Workload_Crunch_WP": {
+                "Estimate": 0.1152,
+                "SE": 0.1688,
+                "t_or_z": 0.6828,
+                "p_val": 0.4947
+            },
+            "Leisure_Log_WP_z": {
+                "Estimate": 0.1277,
+                "SE": 0.1453,
+                "t_or_z": 0.8786,
+                "p_val": 0.3796
+            },
+            "Interaction_Normal": {
+                "Estimate": 0.2028,
+                "SE": 0.1272,
+                "t_or_z": 1.5937,
+                "p_val": 0.111
+            },
+            "Interaction_Crunch": {
+                "Estimate": -0.2068,
+                "SE": 0.1749,
+                "t_or_z": -1.1824,
+                "p_val": 0.237
+            },
+            "Sleep_WP_z": {
+                "Estimate": -0.0479,
+                "SE": 0.0746,
+                "t_or_z": -0.6421,
+                "p_val": 0.5208
+            },
+            "Workload_BP_z": {
+                "Estimate": 0.4304,
+                "SE": 0.1353,
+                "t_or_z": 3.1799,
+                "p_val": 0.0015
+            },
+            "Leisure_Log_BP_z": {
+                "Estimate": -0.2225,
+                "SE": 0.1706,
+                "t_or_z": -1.3038,
+                "p_val": 0.1923
+            },
+            "Sleep_BP_z": {
+                "Estimate": -0.1799,
+                "SE": 0.1703,
+                "t_or_z": -1.0566,
+                "p_val": 0.2907
+            },
+            "Trait_Fatigue_z": {
+                "Estimate": 0.002,
+                "SE": 0.1565,
+                "t_or_z": 0.0129,
+                "p_val": 0.9897
+            },
+            "day_number_z": {
+                "Estimate": -0.0909,
+                "SE": 0.103,
+                "t_or_z": -0.8826,
+                "p_val": 0.3774
+            },
+            "is_week_onset": {
+                "Estimate": -0.0672,
+                "SE": 0.2318,
+                "t_or_z": -0.29,
+                "p_val": 0.7718
+            },
+            "is_week_finish": {
+                "Estimate": -0.2227,
+                "SE": 0.254,
+                "t_or_z": -0.8765,
+                "p_val": 0.3807
+            },
+            "is_weekend": {
+                "Estimate": 0.0871,
+                "SE": 0.2418,
+                "t_or_z": 0.3601,
+                "p_val": 0.7187
+            }
+        },
+        "Parameters_ML": {
+            "Intercept": {
+                "Estimate": -0.088,
+                "SE": 0.173,
+                "t_or_z": -0.5085,
+                "p_val": 0.6111
+            },
+            "Workload_Baseline_WP": {
+                "Estimate": 0.1354,
+                "SE": 0.1336,
+                "t_or_z": 1.0135,
+                "p_val": 0.3108
+            },
+            "Workload_Crunch_WP": {
+                "Estimate": 0.1189,
+                "SE": 0.154,
+                "t_or_z": 0.7719,
+                "p_val": 0.4401
+            },
+            "Leisure_Log_WP_z": {
+                "Estimate": 0.1244,
+                "SE": 0.1322,
+                "t_or_z": 0.9404,
+                "p_val": 0.347
+            },
+            "Interaction_Normal": {
+                "Estimate": 0.2006,
+                "SE": 0.1161,
+                "t_or_z": 1.7279,
+                "p_val": 0.084
+            },
+            "Interaction_Crunch": {
+                "Estimate": -0.2062,
+                "SE": 0.159,
+                "t_or_z": -1.2965,
+                "p_val": 0.1948
+            },
+            "Sleep_WP_z": {
+                "Estimate": -0.0503,
+                "SE": 0.0681,
+                "t_or_z": -0.7382,
+                "p_val": 0.4604
+            },
+            "Workload_BP_z": {
+                "Estimate": 0.4349,
+                "SE": 0.1168,
+                "t_or_z": 3.7236,
+                "p_val": 0.0002
+            },
+            "Leisure_Log_BP_z": {
+                "Estimate": -0.2203,
+                "SE": 0.147,
+                "t_or_z": -1.4988,
+                "p_val": 0.1339
+            },
+            "Sleep_BP_z": {
+                "Estimate": -0.1813,
+                "SE": 0.1472,
+                "t_or_z": -1.232,
+                "p_val": 0.218
+            },
+            "Trait_Fatigue_z": {
+                "Estimate": 0.0042,
+                "SE": 0.1349,
+                "t_or_z": 0.0308,
+                "p_val": 0.9754
+            },
+            "day_number_z": {
+                "Estimate": -0.0972,
+                "SE": 0.0943,
+                "t_or_z": -1.0303,
+                "p_val": 0.3029
+            },
+            "is_week_onset": {
+                "Estimate": -0.0683,
+                "SE": 0.2107,
+                "t_or_z": -0.3242,
+                "p_val": 0.7458
+            },
+            "is_week_finish": {
+                "Estimate": -0.2284,
+                "SE": 0.2315,
+                "t_or_z": -0.9866,
+                "p_val": 0.3238
+            },
+            "is_weekend": {
+                "Estimate": 0.0869,
+                "SE": 0.2201,
+                "t_or_z": 0.3949,
+                "p_val": 0.6929
+            }
+        },
+        "FMI_Statistics": {
+            "Intercept": {
+                "FMI": 0.0,
+                "B_var": 0,
+                "W_var": 0.038364
+            },
+            "Workload_Baseline_WP": {
+                "FMI": 0.0,
+                "B_var": 0,
+                "W_var": 0.021443
+            },
+            "Workload_Crunch_WP": {
+                "FMI": 0.0,
+                "B_var": 0,
+                "W_var": 0.028484
+            },
+            "Leisure_Log_WP_z": {
+                "FMI": 0.0,
+                "B_var": 0,
+                "W_var": 0.021123
+            },
+            "Interaction_Normal": {
+                "FMI": 0.0,
+                "B_var": 0,
+                "W_var": 0.016188
+            },
+            "Interaction_Crunch": {
+                "FMI": 0.0,
+                "B_var": 0,
+                "W_var": 0.030587
+            },
+            "Sleep_WP_z": {
+                "FMI": 0.0,
+                "B_var": 0,
+                "W_var": 0.005572
+            },
+            "Workload_BP_z": {
+                "FMI": 0.0,
+                "B_var": 0,
+                "W_var": 0.018319
+            },
+            "Leisure_Log_BP_z": {
+                "FMI": 0.0,
+                "B_var": 0,
+                "W_var": 0.029119
+            },
+            "Sleep_BP_z": {
+                "FMI": 0.0,
+                "B_var": 0,
+                "W_var": 0.029006
+            },
+            "Trait_Fatigue_z": {
+                "FMI": 0.0,
+                "B_var": 0,
+                "W_var": 0.024485
+            },
+            "day_number_z": {
+                "FMI": 0.0,
+                "B_var": 0,
+                "W_var": 0.010604
+            },
+            "is_week_onset": {
+                "FMI": 0.0,
+                "B_var": 0,
+                "W_var": 0.053714
+            },
+            "is_week_finish": {
+                "FMI": 0.0,
+                "B_var": 0,
+                "W_var": 0.064523
+            },
+            "is_weekend": {
+                "FMI": 0.0,
+                "B_var": 0,
+                "W_var": 0.058475
+            }
+        }
+    },
+    "NonLinear_2L_imputed": {
+        "Converged": true,
+        "Converged_ML": true,
+        "Dataset": "imputed",
+        "N_obs_mean": 127.0,
+        "m_imputations": 20,
+        "ICC_mean_ML": 0.2768090440244172,
+        "ICC_mean_REML": 0.3322874517367326,
+        "Pseudo_R2_Marginal_mean": 0.41339363206357477,
+        "Pseudo_R2_Conditional_mean": 0.5777616426115416,
+        "Singular_Fit_Warning": false,
+        "Random_Slope_Improves_Fit": false,
+        "AIC_ML": {
+            "mean": 300.7580922246362,
+            "sd": 5.8961869980060895,
+            "min": 292.5256348116884,
+            "max": 312.86725365011466
+        },
+        "BIC_ML": {
+            "mean": 349.1092726944322,
+            "sd": 5.8961869980060895,
+            "min": 340.8768152814845,
+            "max": 361.21843411991074
+        },
+        "LogLikelihood_ML": {
+            "mean": -133.3790461123181,
+            "sd": 2.9480934990030447,
+            "min": -139.43362682505733,
+            "max": -129.2628174058442
+        },
+        "Note": "AIC/BIC/LogLikelihood are averaged across imputations (descriptive) and are not formally pooled. Coefficients/SEs are formally pooled.",
+        "Parameters": {
+            "Intercept": {
+                "Estimate": 0.0369,
+                "SE": 0.1617,
+                "t_or_z": 0.228,
+                "p_val": 0.8248
+            },
+            "Workload_Baseline_WP": {
+                "Estimate": 0.1779,
+                "SE": 0.147,
+                "t_or_z": 1.2107,
+                "p_val": 0.2297
+            },
+            "Workload_Crunch_WP": {
+                "Estimate": 0.2798,
+                "SE": 0.1321,
+                "t_or_z": 2.1186,
+                "p_val": 0.0372
+            },
+            "Leisure_Log_WP_z": {
+                "Estimate": 0.051,
+                "SE": 0.1506,
+                "t_or_z": 0.3389,
+                "p_val": 0.7363
+            },
+            "Interaction_Normal": {
+                "Estimate": 0.1349,
+                "SE": 0.1432,
+                "t_or_z": 0.9414,
+                "p_val": 0.3508
+            },
+            "Interaction_Crunch": {
+                "Estimate": -0.1378,
+                "SE": 0.1575,
+                "t_or_z": -0.8748,
+                "p_val": 0.3851
+            },
+            "Sleep_WP_z": {
+                "Estimate": -0.0626,
+                "SE": 0.0767,
+                "t_or_z": -0.8167,
+                "p_val": 0.4174
+            },
+            "Workload_BP_z": {
+                "Estimate": 0.4109,
+                "SE": 0.1184,
+                "t_or_z": 3.4696,
+                "p_val": 0.0089
+            },
+            "Leisure_Log_BP_z": {
+                "Estimate": -0.204,
+                "SE": 0.1524,
+                "t_or_z": -1.3388,
+                "p_val": 0.2166
+            },
+            "Sleep_BP_z": {
+                "Estimate": -0.1122,
+                "SE": 0.1467,
+                "t_or_z": -0.7646,
+                "p_val": 0.4668
+            },
+            "Trait_Fatigue_z": {
+                "Estimate": 0.0213,
+                "SE": 0.1206,
+                "t_or_z": 0.1762,
+                "p_val": 0.8642
+            },
+            "day_number_z": {
+                "Estimate": -0.0492,
+                "SE": 0.0876,
+                "t_or_z": -0.5619,
+                "p_val": 0.5754
+            },
+            "is_week_onset": {
+                "Estimate": -0.1683,
+                "SE": 0.1859,
+                "t_or_z": -0.9055,
+                "p_val": 0.3673
+            },
+            "is_week_finish": {
+                "Estimate": -0.1558,
+                "SE": 0.2167,
+                "t_or_z": -0.7192,
+                "p_val": 0.4737
+            },
+            "is_weekend": {
+                "Estimate": -0.0769,
+                "SE": 0.2009,
+                "t_or_z": -0.383,
+                "p_val": 0.7026
+            }
+        },
+        "Parameters_ML": {
+            "Intercept": {
+                "Estimate": 0.034,
+                "SE": 0.1484,
+                "t_or_z": 0.2294,
+                "p_val": 0.8239
+            },
+            "Workload_Baseline_WP": {
+                "Estimate": 0.1795,
+                "SE": 0.141,
+                "t_or_z": 1.2731,
+                "p_val": 0.207
+            },
+            "Workload_Crunch_WP": {
+                "Estimate": 0.2803,
+                "SE": 0.1274,
+                "t_or_z": 2.2004,
+                "p_val": 0.0308
+            },
+            "Leisure_Log_WP_z": {
+                "Estimate": 0.0499,
+                "SE": 0.1457,
+                "t_or_z": 0.3425,
+                "p_val": 0.7337
+            },
+            "Interaction_Normal": {
+                "Estimate": 0.1329,
+                "SE": 0.1382,
+                "t_or_z": 0.9611,
+                "p_val": 0.3411
+            },
+            "Interaction_Crunch": {
+                "Estimate": -0.14,
+                "SE": 0.1515,
+                "t_or_z": -0.924,
+                "p_val": 0.3593
+            },
+            "Sleep_WP_z": {
+                "Estimate": -0.0634,
+                "SE": 0.0742,
+                "t_or_z": -0.8551,
+                "p_val": 0.3962
+            },
+            "Workload_BP_z": {
+                "Estimate": 0.4163,
+                "SE": 0.1062,
+                "t_or_z": 3.9196,
+                "p_val": 0.0051
+            },
+            "Leisure_Log_BP_z": {
+                "Estimate": -0.206,
+                "SE": 0.1362,
+                "t_or_z": -1.5124,
+                "p_val": 0.1694
+            },
+            "Sleep_BP_z": {
+                "Estimate": -0.1122,
+                "SE": 0.1314,
+                "t_or_z": -0.8544,
+                "p_val": 0.4189
+            },
+            "Trait_Fatigue_z": {
+                "Estimate": 0.0229,
+                "SE": 0.1079,
+                "t_or_z": 0.212,
+                "p_val": 0.8372
+            },
+            "day_number_z": {
+                "Estimate": -0.0546,
+                "SE": 0.0836,
+                "t_or_z": -0.6524,
+                "p_val": 0.5156
+            },
+            "is_week_onset": {
+                "Estimate": -0.1646,
+                "SE": 0.177,
+                "t_or_z": -0.9301,
+                "p_val": 0.3545
+            },
+            "is_week_finish": {
+                "Estimate": -0.1564,
+                "SE": 0.2066,
+                "t_or_z": -0.7569,
+                "p_val": 0.4509
+            },
+            "is_weekend": {
+                "Estimate": -0.0744,
+                "SE": 0.1916,
+                "t_or_z": -0.3885,
+                "p_val": 0.6986
+            }
+        },
+        "FMI_Statistics": {
+            "Intercept": {
+                "FMI": 0.0613,
+                "B_var": 0.001528,
+                "W_var": 0.024556
+            },
+            "Workload_Baseline_WP": {
+                "FMI": 0.1856,
+                "B_var": 0.003819,
+                "W_var": 0.01759
+            },
+            "Workload_Crunch_WP": {
+                "FMI": 0.1636,
+                "B_var": 0.002716,
+                "W_var": 0.014586
+            },
+            "Leisure_Log_WP_z": {
+                "FMI": 0.3861,
+                "B_var": 0.008344,
+                "W_var": 0.013928
+            },
+            "Interaction_Normal": {
+                "FMI": 0.3232,
+                "B_var": 0.006315,
+                "W_var": 0.013887
+            },
+            "Interaction_Crunch": {
+                "FMI": 0.2733,
+                "B_var": 0.006454,
+                "W_var": 0.018019
+            },
+            "Sleep_WP_z": {
+                "FMI": 0.2839,
+                "B_var": 0.001589,
+                "W_var": 0.004209
+            },
+            "Workload_BP_z": {
+                "FMI": 0.1675,
+                "B_var": 0.002238,
+                "W_var": 0.011675
+            },
+            "Leisure_Log_BP_z": {
+                "FMI": 0.1249,
+                "B_var": 0.002763,
+                "W_var": 0.020329
+            },
+            "Sleep_BP_z": {
+                "FMI": 0.1556,
+                "B_var": 0.003191,
+                "W_var": 0.018181
+            },
+            "Trait_Fatigue_z": {
+                "FMI": 0.0848,
+                "B_var": 0.001175,
+                "W_var": 0.013316
+            },
+            "day_number_z": {
+                "FMI": 0.0577,
+                "B_var": 0.000422,
+                "W_var": 0.007235
+            },
+            "is_week_onset": {
+                "FMI": 0.0489,
+                "B_var": 0.001609,
+                "W_var": 0.032856
+            },
+            "is_week_finish": {
+                "FMI": 0.0518,
+                "B_var": 0.002315,
+                "W_var": 0.044517
+            },
+            "is_weekend": {
+                "FMI": 0.1029,
+                "B_var": 0.003955,
+                "W_var": 0.0362
+            }
+        }
+    }
+}

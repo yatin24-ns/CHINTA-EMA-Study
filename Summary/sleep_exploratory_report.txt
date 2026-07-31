@@ -1,0 +1,36 @@
+======================================================================
+  EXPLORATORY SLEEP MODELS REPORT
+======================================================================
+Note: This concludes the exploratory phase. Any further hypotheses arising from these two tests will be flagged as directions for future/pre-registered study, not tested further within this dataset.
+
+TEST 1: SAME-DAY MODERATION (Workload x Sleep)
+Question: Does today's workload blunt how much last night's sleep protects you from fatigue this evening?
+
+  [Original (Complete Case)] (N=78, Participants=22)
+    Sleep Main Effect:      Coef = -0.0625, p = 0.4167
+    Interaction (SxW):      Coef = 0.0205, p = 0.8144
+    Conclusion: Interaction non-significant. No evidence of moderation (additive predictors only).
+  [Imputed (Passive, Pooled m=20)] (N=127, Participants=26)
+    Sleep Main Effect:      Coef = -0.0715, p = 0.3786
+    Interaction (SxW):      Coef = -0.0058, p = 0.9420
+    Conclusion: Interaction non-significant. No evidence of moderation (additive predictors only).
+  [Imputed (JAV, Pooled m=20)] (N=127, Participants=26)
+    Sleep Main Effect:      Coef = -0.0715, p = 0.3786
+    Interaction (SxW):      Coef = -0.0058, p = 0.9420
+    Conclusion: Interaction non-significant. No evidence of moderation (additive predictors only).
+
+TEST 2: NON-LINEAR DOSE-RESPONSE (Sleep + Sleep^2)
+Question: Is sleep's benefit linear, or does it show diminishing returns?
+
+  [Original (Complete Case)] (N=78, Participants=22)
+    Linear (Sleep):         Coef = -0.0866, p = 0.2350
+    Quadratic (Sleep^2):    Coef = -0.0844, p = 0.0728
+    Conclusion: Quadratic non-significant. Linear model is adequate.
+  [Imputed (Passive, Pooled m=20)] (N=127, Participants=26)
+    Linear (Sleep):         Coef = -0.0727, p = 0.3515
+    Quadratic (Sleep^2):    Coef = -0.0401, p = 0.3639
+    Conclusion: Quadratic non-significant. Linear model is adequate.
+  [Imputed (JAV, Pooled m=20)] (N=127, Participants=26)
+    Linear (Sleep):         Coef = -0.0727, p = 0.3515
+    Quadratic (Sleep^2):    Coef = -0.0401, p = 0.3639
+    Conclusion: Quadratic non-significant. Linear model is adequate.

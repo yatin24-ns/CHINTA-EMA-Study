@@ -1,0 +1,29 @@
+======================================================================
+  BAYESIAN LAGGED MULTILEVEL MEDIATION ANALYSIS REPORT
+======================================================================
+Model N (WP): ~64 consecutive-day observations (pooled across m=20 imputations)
+Model N (BP): ~21 participants (pooled across m=20 imputations)
+
+--- WITHIN-PERSON MEDIATION (Daily fluctuations) ---
+  Path A (Workload_WP -> Leisure_WP):      Coef = -0.0640, 95% HDI = [-0.3431, 0.2250], pd = 67.5%
+  Path B (Leisure_WP -> Fatigue_t+1):      Coef = 0.1387, 95% HDI = [-0.0501, 0.3315], pd = 92.8%
+  Total Effect C (Workload_WP alone):      Coef = 0.0962, 95% HDI = [-0.0814, 0.2643], pd = 86.7%
+  Direct Effect C' (net of Leisure):       Coef = 0.0992, 95% HDI = [-0.0785, 0.2724], pd = 86.8%
+
+  INDIRECT EFFECT (a*b):                   Coef = -0.0077, 95% HDI = [-0.0654, 0.0410], pd = 64.0%
+  -> NULL FINDING: 95% HDI includes zero. No evidence for WP mediation.
+  Proportion Mediated (Median):          -2.9% (Descriptive only)
+
+--- BETWEEN-PERSON MEDIATION (Trait-level/Chronic effects) ---
+  Path A (Workload_BP -> Leisure_BP):      Coef = -0.0156, 95% HDI = [-0.4352, 0.4163], pd = 53.3%
+  Path B (Leisure_BP -> Fatigue_t+1):      Coef = -0.2648, 95% HDI = [-0.6550, 0.1471], pd = 90.9%
+  Total Effect C (Workload_BP alone):      Coef = 0.4413, 95% HDI = [0.0963, 0.7763], pd = 99.2%
+  Direct Effect C' (net of Leisure):       Coef = 0.4248, 95% HDI = [0.0921, 0.7532], pd = 99.1%
+
+  INDIRECT EFFECT (a*b):                   Coef = 0.0032, 95% HDI = [-0.1496, 0.1587], pd = 52.3%
+  -> NULL FINDING: 95% HDI includes zero. No evidence for BP mediation.
+  Proportion Mediated (Median):          0.3% (Descriptive only)
+
+--- PLACEBO TEST (Reverse Direction) ---
+  Hypothesis: Fatigue(t) -> Leisure_WP(t+1)
+  Fatigue Effect:                          Coef = -0.0276, 95% HDI = [-0.4513, 0.3965], pd = 54.4%
